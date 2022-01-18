@@ -1,0 +1,90 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    height: 55px;
+}
+  
+li {
+    float: left;
+}
+
+li div {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+}
+a{
+    text-decoration : none
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: grey;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+}
+
+.circle2{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    padding: 2px;
+    background-color: rgb(204, 204, 204);
+}
+
+.sidepanel{
+    position: fixed;
+    right: 0;
+    margin-top: 55px;
+    padding: 20px;
+    height: 100%;
+    width: 40%;
+}
+.info{
+    margin: 5px;
+}
+.cards{
+    margin-top: 55px;
+    margin-right: calc(40% + 30px);
+    padding: 20px;
+    float:right;
+    width: 40%;
+}
+.card{
+    width: calc(100% - 60px);
+    border: solid 1px #CCC; 
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    main{
+        width: 600px;
+    }
+    .sidepanel{
+        display: none;
+    }
+    .cards{
+        margin-right: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+}
