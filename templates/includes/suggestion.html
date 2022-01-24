@@ -1,0 +1,61 @@
+<div class = "sidepanel">
+    <div style="display:flex; margin: 10px;">
+        <img src="{{ user.get('image_url') }}" style = "align-self:center;" class = "circle" alt=""></img>
+        <div class = "info" style = "align-self:center; font-size: xxx-large; margin-left: 30px; font-family: 'Comfortaa', cursive;">{{ user.get('username') }}</div>
+    </div>
+    <div style = "margin: 10px; margin-top: 20px; font-size: x-large; color: gray; font-weight: bold;"> 
+        <div>
+            Suggestions for you
+        </div>
+        <div>
+            <div style="display:flex; margin: 10px;">
+                <img src="{{ suggestions[0].get('image_url') }}" style = "align-self:center;" class = "circle2" alt=""></img>
+                <div style = "align-self:center;">
+                    <div class = "info" style = " font-size: x-large; margin-left: 30px; color: black;">{{ suggestions[0].get('username') }}</div>
+                    <div class = "info" style = " font-size: large; margin-left: 30px;">Suggested for you</div>
+                </div>
+                <div style = "align-self:center; color:rgb(41, 41, 189); font-size: large; margin-left: 30px;" tabindex="0"><a href="#">follow</a></div>
+            </div>
+        </div>
+        <div>
+            <div style="display:flex; margin: 10px;">
+                <img src="{{ suggestions[1].get('image_url') }}" style = "align-self:center;" class = "circle2" alt=""></img>
+                <div style = "align-self:center;">
+                    <div class = "info" style = " font-size: x-large; margin-left: 30px; color: black;">{{ suggestions[1].get('username') }}</div>
+                    <div class = "info" style = " font-size: large; margin-left: 30px;">Suggested for you</div>
+                </div>
+                <div style = "align-self:center; color:rgb(41, 41, 189); font-size: large; margin-left: 30px;" tabindex="0"><a href="#">follow</a></div>
+            </div>
+        </div>
+        <div>
+            <div style="display:flex; margin: 10px;">
+                <img src="{{ suggestions[2].get('image_url') }}" style = "align-self:center;" class = "circle2" alt=""</img>
+                <div style = "align-self:center;">
+                    <div class = "info" style = " font-size: x-large; margin-left: 30px; color: black;">{{ suggestions[2].get('username') }}</div>
+                    <div class = "info" style = " font-size: large; margin-left: 30px;">Suggested for you</div>
+                </div>
+                <div style = "align-self:center; color:rgb(41, 41, 189); font-size: large; margin-left: 30px;" tabindex="0"><a href="#">follow</a></div>
+            </div>
+        </div>
+        <div>
+            <div style="display:flex; margin: 10px;">
+                <img src="{{ suggestions[3].get('image_url') }}" style = "align-self:center;" class = "circle2" alt=""></img>
+                <div style = "align-self:center;">
+                    <div class = "info" style = " font-size: x-large; margin-left: 30px; color: black;">{{ suggestions[3].get('username') }}</div>
+                    <div class = "info" style = " font-size: large; margin-left: 30px;">Suggested for you</div>
+                </div>
+                <div style = "align-self:center; color:rgb(41, 41, 189); font-size: large; margin-left: 30px;" tabindex="0"><a href="#">follow</a></div>
+            </div>
+        </div>
+        <div>
+            <div style="display:flex; margin: 10px;">
+                <img src="{{ suggestions[4].get('image_url') }}" style = "align-self:center;" class = "circle2" alt=""></img>
+                <div style = "align-self:center;">
+                    <div class = "info" style = " font-size: x-large; margin-left: 30px; color: black;">{{ suggestions[4].get('username') }}</div>
+                    <div class = "info" style = " font-size: large; margin-left: 30px;">Suggested for you</div>
+                </div>
+                <div style = "align-self:center; color:rgb(41, 41, 189); font-size: large; margin-left: 30px;" tabindex="0"><a href="#">follow</a></div>
+            </div>
+        </div>
+    </div>
+</div>

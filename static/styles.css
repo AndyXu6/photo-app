@@ -62,8 +62,8 @@ li a:hover {
 .info{
     margin: 5px;
 }
+
 .cards{
-    margin-top: 55px;
     margin-right: calc(40% + 30px);
     padding: 20px;
     float:right;
