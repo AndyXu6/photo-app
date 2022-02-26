@@ -1,5 +1,14 @@
-<ul>
-    <li><div>Photo App</div></li>
-    <li style="float:right" tabindex="0"><a class="active" href="index.html" style="color:rgb(41, 41, 189);">Sign out</a></li>
-    <li style="float:right;font-family:  'Comfortaa', cursive;"><a href="#username">{{ user.get('username') }}</a></li>
-</ul>
+<nav class="main-nav">
+    <h1>Photo App</h1>
+    <ul>
+        <li>
+            {% if request.url_rule.endpoint == 'api_docs' %}
+                <a href="/">Home</a>
+            {% else %}
+                <a href="/api">API Docs</a>
+            {% endif %}
+        </li>
+        <li><span>{{ user.username }}  {{ user.id }}</span></li>
+        <li><a href="#">Sign out</a></li>
+    </ul>
+</nav>
