@@ -14,6 +14,7 @@ from flask import (
 )
 # new import statements:
 import decorators
+from datetime import timedelta
 import flask_jwt_extended  
 app = Flask(__name__)
 
@@ -25,6 +26,7 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["JWT_SECRET_KEY"] = os.environ.get('JWT_SECRET')
 app.config["JWT_TOKEN_LOCATION"] = ["headers", "cookies"]
 app.config["JWT_COOKIE_SECURE"] = False
+app.config["JWT_ACCESS_TOKEN_EXPIRES"] = timedelta(days=30)
 db.init_app(app)
 api = Api(app)
 jwt = flask_jwt_extended.JWTManager(app)

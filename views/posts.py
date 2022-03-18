@@ -90,8 +90,8 @@ class PostDetailEndpoint(Resource):
         return Response(json.dumps(serialized_data), mimetype="application/json", status=200)
 
     @flask_jwt_extended.jwt_required()
-    @security.id_is_valid
-    @security.user_can_view_post
+    # @security.id_is_valid
+    # @security.user_can_view_post
     def get(self, id):
         post = Post.query.get(id)
         return Response(json.dumps(post.to_dict(user=self.current_user)), mimetype="application/json", status=200)
